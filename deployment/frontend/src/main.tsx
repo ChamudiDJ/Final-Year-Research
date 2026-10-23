@@ -228,7 +228,9 @@ function App() {
                   {result.contributions.slice(0, 8).map((c) => (
                     <div className="contribution" key={c.feature}>
                       <span title={schema.questions[c.feature]}>
-                        {c.feature}
+                        {c.feature} · {answers[c.feature] === null
+                          ? "Not answered (median used)"
+                          : schema.scale[String(answers[c.feature])]}
                         <small>{schema.questions[c.feature]}</small>
                       </span>
                       <strong
@@ -269,8 +271,8 @@ function App() {
                   Space to reflect.
                 </h2>
                 <p className="muted">
-                  Choose how often each experience occurred, using the reference
-                  period in the study questionnaire. No answer is preselected.
+                  Choose how often each experience occurred during the past six
+                  months. No answer is preselected.
                   You may choose not to answer an item; skipped items use median
                   training values.
                 </p>

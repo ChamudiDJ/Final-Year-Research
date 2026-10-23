@@ -1,0 +1,12 @@
+case,passed,notes
+no_preselected_answers,1,All 30 visible radio inputs unselected on entry
+eligibility_gate,1,Continue remained disabled after five answers until eligibility was confirmed
+incomplete_page_gate,1,Continue disabled while the next page had unanswered items
+back_navigation,1,All five answers retained after Back
+complete_assessment,1,20 synthetic Never responses returned the trained model result
+class_probabilities,1,"Low 91.7%, neutral 6.6%, high 1.7%; displayed total 100.0%"
+local_explanations,1,"Contributions, reference disclosure and support guidance displayed"
+clear_answers,1,Reset returned to zero selected answers
+refresh_privacy,1,Reload returned to zero selected answers
+mobile_390,1,390x844 viewport: no horizontal overflow; question controls remained readable
+exit_link,1,Leave this page targets https://www.google.com with no-referrer

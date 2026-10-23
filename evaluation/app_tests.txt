@@ -1,0 +1,35 @@
+TAP version 13
+# Subtest: invalid responses are rejected
+ok 1 - invalid responses are rejected
+  ---
+  duration_ms: 2.462992
+  ...
+# Subtest: exported model matches sklearn on synthetic parity cases
+ok 2 - exported model matches sklearn on synthetic parity cases
+  ---
+  duration_ms: 77.571374
+  ...
+# Subtest: boundary and missing responses produce valid explainable estimates
+ok 3 - boundary and missing responses produce valid explainable estimates
+  ---
+  duration_ms: 622.739273
+  ...
+# Subtest: API serves schema and health with evaluated model only
+ok 4 - API serves schema and health with evaluated model only
+  ---
+  duration_ms: 1.182868
+  ...
+# Subtest: API validates eligibility, methods, missing answers and extra fields
+ok 5 - API validates eligibility, methods, missing answers and extra fields
+  ---
+  duration_ms: 47.288178
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 851.667263
