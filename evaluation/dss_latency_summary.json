@@ -1,0 +1,1 @@
+{"runs":30,"p50_ms":13.311999999999998,"p95_ms":20.257400000000004,"mean_ms":14.731866666666669,"scope":"Node inference and permutation SHAP; excludes network, browser and hosting cold start"}

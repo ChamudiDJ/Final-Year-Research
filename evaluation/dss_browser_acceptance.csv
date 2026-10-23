@@ -1,0 +1,18 @@
+case,passed,notes
+support_before_assessment,1,Support directory and emergency links available without answers or eligibility
+service_filter,1,Medical filter shows hospital service; emergency access stays visible
+campus_directory,1,Moratuwa selection opens its official counselling contact; no model input
+eligibility_gate,1,No preselected responses; Continue disabled without eligibility
+incomplete_page_gate,1,Next page disabled until every item is answered or explicitly skipped
+partial_dvq,1,D01 skipped and remaining items Rarely: subtotal 19; total incomplete; possible sum 19-23
+partial_category,1,Coercion incomplete: subtotal 3 across 3/4; other categories 4/16
+model_missing_disclosure,1,Skipped response disclosed as model median; not included in DVQ sums
+review_responses,1,Review retains responses; setting D01 to Rarely yields total 20/80 and five sums 4/16
+all_skipped,1,All 20 skips show explanatory error while services remain accessible
+explanation,1,SHAP panel shows contributions and skipped-item median disclosure
+support_rule_reasons,1,Physical/sexual and coercion options display observed-response rationale
+planner,1,"Counsellor option reveals next step, opening script and optional checklist"
+planner_navigation,1,Plan choice and checked step survive switching to explanation and back
+export_privacy_default,1,Sensitive assessment results checkbox is unchecked by default; export content unit-tested
+clear_session,1,"Clear resets answers, eligibility and university choice"
+mobile_390,1,"390x844 viewport: content width 375, no horizontal overflow; scores and controls readable"

@@ -2,27 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 
-type Schema = {
-  title: string;
-  features: string[];
-  questions: Record<string, string>;
-  labels: string[];
-  scale: Record<string, string>;
-  model: string;
-  development_n: number;
-  test_n: number;
-  test_metrics: Record<string, number>;
-  interpretation: string;
-};
-type Result = {
-  category: number;
-  label: string;
-  probabilities: number[];
-  guidance: string;
-  reference_probability: number;
-  reference: string;
-  contributions: { feature: string; value: number }[];
-};
+import type { Schema, Result } from "./types";
+import { DecisionDashboard } from "./DecisionDashboard";
+import { SupportDirectory, UrgentHelp } from "./SupportDirectory";
 
 async function api<T>(path: string, options?: RequestInit): Promise<T> {
   const response = await fetch(path, { cache: "no-store", ...options });
@@ -45,6 +27,7 @@ function App() {
   const [result, setResult] = useState<Result | null>(null);
   const [step, setStep] = useState(0);
   const [busy, setBusy] = useState(false);
+  const [sessionKey, setSessionKey] = useState(0);
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
     api<Schema>("/api/questionnaire")
@@ -63,10 +46,17 @@ function App() {
     setEligible(false);
     setStep(0);
     setError("");
+    setSessionKey((key) => key + 1);
   }
   async function submit() {
     if (!schema || completed !== 20 || !eligible) {
       setError("Confirm eligibility and answer every question.");
+      return;
+    }
+    if (Object.values(answers).every((value) => value === null)) {
+      setError(
+        "At least one experience response is needed for an estimate. You can still browse support without answering.",
+      );
       return;
     }
     setBusy(true);
@@ -94,10 +84,14 @@ function App() {
             Pathways<span className="brand-sub">RESEARCH DECISION SUPPORT</span>
           </span>
         </a>
+        <a className="support-nav" href="#support">
+          Find support
+        </a>
         <a
           className="exit"
           href="https://www.google.com"
           referrerPolicy="no-referrer"
+          onClick={reset}
         >
           Leave this page <span aria-hidden>↗</span>
         </a>
@@ -113,8 +107,8 @@ function App() {
             <em>A step toward support.</em>
           </h1>
           <p>
-            Explore an estimate of professional help-seeking intention based on
-            your relationship experiences.
+            Understand your relationship experiences, explore your estimated
+            help-seeking intention, and find a next step that suits you.
           </p>
           <div className="intro-tags">
             <span>20 questions</span>
@@ -128,8 +122,8 @@ function App() {
             <ol className="steps">
               {[
                 "Relationship experiences",
-                "Your estimated intention",
-                "Understanding your result",
+                "Your experience profile",
+                "Your support options",
               ].map((text, i) => (
                 <li
                   key={text}
@@ -159,7 +153,7 @@ function App() {
               does not save your answers.
             </p>
           </aside>
-          <section className="card" aria-busy={busy}>
+          <section id="assessment" className="card" aria-busy={busy}>
             {error && (
               <div className="error" role="alert">
                 {error}
@@ -182,87 +176,20 @@ function App() {
                 )}
               </div>
             ) : result ? (
-              <>
-                <div className="eyebrow">YOUR ESTIMATED INTENTION</div>
-                <h2 ref={heading} tabIndex={-1}>
-                  {result.label}
-                </h2>
-                <p className="muted">
-                  An estimate of stated willingness to seek professional
-                  counselling. Every category has uncertainty.
-                </p>
-                <div className="probabilities">
-                  {schema.labels.map((label, i) => (
-                    <div className="probability" key={label}>
-                      <div>
-                        <span>{label}</span>
-                        <strong>
-                          {(result.probabilities[i] * 100).toFixed(1)}%
-                        </strong>
-                      </div>
-                      <div className="track">
-                        <div
-                          style={{ width: `${result.probabilities[i] * 100}%` }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="guidance">
-                  <h3>A possible next step</h3>
-                  <p>{result.guidance}</p>
-                </div>
-                <p className="small">
-                  Low intention does not mean low violence or low need for
-                  support. This estimate does not determine whether you need
-                  help.
-                </p>
-                <hr />
-                <h3>What influenced this estimate</h3>
-                <p className="small">
-                  Positive contributions raise this category’s estimated
-                  probability relative to the reference. Negative contributions
-                  lower it. These are model associations, not causes.
-                </p>
-                <div className="contributions">
-                  {result.contributions.slice(0, 8).map((c) => (
-                    <div className="contribution" key={c.feature}>
-                      <span title={schema.questions[c.feature]}>
-                        {c.feature} · {answers[c.feature] === null
-                          ? "Not answered (median used)"
-                          : schema.scale[String(answers[c.feature])]}
-                        <small>{schema.questions[c.feature]}</small>
-                      </span>
-                      <strong
-                        className={c.value >= 0 ? "positive" : "negative"}
-                      >
-                        {c.value >= 0 ? "+" : ""}
-                        {(c.value * 100).toFixed(2)} pp
-                      </strong>
-                    </div>
-                  ))}
-                </div>
-                <details>
-                  <summary>Explanation reference and all contributions</summary>
-                  <p className="small">
-                    {result.reference}. Reference probability:{" "}
-                    {(result.reference_probability * 100).toFixed(2)}%. All 20
-                    contributions plus this reference equal the selected
-                    probability; displayed values are rounded.
-                  </p>
-                  {result.contributions.map((c) => (
-                    <p className="small" key={c.feature}>
-                      {c.feature}: {(c.value * 100).toFixed(3)} percentage
-                      points
-                    </p>
-                  ))}
-                </details>
-                <button className="primary wide" onClick={reset}>
-                  Clear answers and start again
-                </button>
-              </>
+              <DecisionDashboard
+                result={result}
+                schema={schema}
+                answers={answers}
+                onReset={reset}
+                onReview={() => {
+                  setResult(null);
+                  setStep(0);
+                  setError("");
+                }}
+              />
             ) : (
               <>
+                <UrgentHelp />
                 <div className="card-top">
                   <span className="eyebrow">RELATIONSHIP EXPERIENCES</span>
                   <span className="page-count">{step + 1} / 4</span>
@@ -272,12 +199,16 @@ function App() {
                 </h2>
                 <p className="muted">
                   Choose how often each experience occurred during the past six
-                  months. No answer is preselected.
-                  You may choose not to answer an item; skipped items use median
-                  training values.
+                  months. No answer is preselected. You may choose not to answer
+                  an item. Skips stay unscored in your DVQ-R profile; the
+                  intention model uses median training values.
                 </p>
                 <div className="progress-label">
-                  <span>{completed} of 20 answered</span>
+                  <span>
+                    {completed} of 20 completed ·{" "}
+                    {Object.values(answers).filter((v) => v === null).length}{" "}
+                    skipped
+                  </span>
                   <span>{Math.round((completed / 20) * 100)}%</span>
                 </div>
                 <progress value={completed} max={20} />
@@ -297,6 +228,7 @@ function App() {
                 <form
                   onSubmit={(e) => {
                     e.preventDefault();
+                    if (!pageComplete || !eligible || busy) return;
                     if (step < 3) {
                       setStep(step + 1);
                       setError("");
@@ -373,7 +305,7 @@ function App() {
                         ? "Estimating and explaining…"
                         : step < 3
                           ? "Continue →"
-                          : "See my estimate →"}
+                          : "See my dashboard →"}
                     </button>
                   </div>
                 </form>
@@ -386,8 +318,9 @@ function App() {
             )}
           </section>
         </div>
+        {schema && <SupportDirectory key={sessionKey} schema={schema} />}
         {schema && (
-          <details className="research">
+          <details id="research" className="research">
             <summary>About the research and model</summary>
             <p>{schema.title}</p>
             <p>{schema.interpretation}</p>
@@ -404,6 +337,37 @@ function App() {
                 </div>
               ))}
             </div>
+            <p>
+              Random Forest was selected using development cross-validation
+              macro F1 (0.837), before the independent test. XGBoost had a
+              higher test F1 (0.854); the held-out results were not used to
+              change the selected model. Repeated response patterns were kept in
+              the same split and folds.
+            </p>
+            <p>DVQ-R scoring: {schema.dss.scoring_policy}</p>
+            <p>
+              <a
+                href={schema.dss.scoring_source.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                DVQ-R validation paper ↗
+              </a>{" "}
+              ·{" "}
+              <a
+                href={schema.dss.support_source.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                WHO support guidance ↗
+              </a>
+            </p>
+            <p>
+              Decision-support version: {schema.dss.version}. Descriptive
+              scoring, the predictive model and transparent support rules are
+              separate components. The planner preferences and university
+              selection are not model predictors.
+            </p>
             <p>
               Results describe the study sample and do not establish performance
               for every university or student. This tool does not estimate
