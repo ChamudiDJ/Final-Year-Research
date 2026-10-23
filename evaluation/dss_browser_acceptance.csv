@@ -16,3 +16,4 @@ planner_navigation,1,Plan choice and checked step survive switching to explanati
 export_privacy_default,1,Sensitive assessment results checkbox is unchecked by default; export content unit-tested
 clear_session,1,"Clear resets answers, eligibility and university choice"
 mobile_390,1,"390x844 viewport: content width 375, no horizontal overflow; scores and controls readable"
+model_failure_support,1,Deliberately unavailable model: assessment unavailable; separate support directory and medical filter remained usable

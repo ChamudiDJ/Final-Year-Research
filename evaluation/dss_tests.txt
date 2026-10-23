@@ -2,23 +2,24 @@
 > help-seeking-intention-dss@1.0.0 test
 > node --test tests/*.test.mjs
 
-✔ DVQ-R mapping covers exactly 20 unique items and the five retained domains (1.018ms)
-✔ complete scores sum raw frequencies without reversing or severity thresholds (0.865ms)
-✔ skipped items never become zero or training medians in descriptive scores (0.3309ms)
-✔ decision rules use observed evidence and support stays available at every score (1.1748ms)
-✔ DSS additions preserve evaluated predictions and explanation completeness (47.91ms)
-✔ public questionnaire supplies the versioned service and scoring sources (0.402ms)
-✔ downloaded plans exclude sensitive results by default and raw answers always (16.2498ms)
-✔ invalid responses are rejected (0.8814ms)
-✔ exported model matches sklearn on synthetic parity cases (30.6013ms)
-✔ boundary and missing responses produce valid explainable estimates (154.2347ms)
-✔ API serves schema and health with evaluated model only (0.4963ms)
-✔ API validates eligibility, methods, missing answers and extra fields (14.1433ms)
-ℹ tests 12
+✔ DVQ-R mapping covers exactly 20 unique items and the five retained domains (1.4417ms)
+✔ complete scores sum raw frequencies without reversing or severity thresholds (1.1562ms)
+✔ skipped items never become zero or training medians in descriptive scores (0.3101ms)
+✔ decision rules use observed evidence and support stays available at every score (1.1785ms)
+✔ DSS additions preserve evaluated predictions and explanation completeness (47.742ms)
+✔ public questionnaire supplies the versioned service and scoring sources (0.4151ms)
+✔ downloaded plans exclude sensitive results by default and raw answers always (19.0503ms)
+✔ standalone support endpoint does not require model files or assessment responses (0.2476ms)
+✔ invalid responses are rejected (1.0346ms)
+✔ exported model matches sklearn on synthetic parity cases (32.0497ms)
+✔ boundary and missing responses produce valid explainable estimates (169.3162ms)
+✔ API serves schema and health with evaluated model only (0.5588ms)
+✔ API validates eligibility, methods, missing answers and extra fields (13.9208ms)
+ℹ tests 13
 ℹ suites 0
-ℹ pass 12
+ℹ pass 13
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 373.1162
+ℹ duration_ms 415.0848

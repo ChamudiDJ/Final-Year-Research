@@ -4,6 +4,7 @@ import { resolve, extname, sep } from "node:path";
 import health from "../api/health.mjs";
 import questionnaire from "../api/questionnaire.mjs";
 import predict from "../api/predict.mjs";
+import support from "../api/support.mjs";
 import { send } from "../lib/http.mjs";
 
 const root = resolve("deployment/frontend/dist");
@@ -11,6 +12,7 @@ const routes = {
   "/api/health": health,
   "/api/questionnaire": questionnaire,
   "/api/predict": predict,
+  "/api/support": support,
 };
 const types = {
   ".html": "text/html",

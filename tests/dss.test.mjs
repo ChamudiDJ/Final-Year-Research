@@ -8,6 +8,7 @@ import {
 } from "../lib/dss.mjs";
 import { assess, loadBundle } from "../lib/model.mjs";
 import questionnaire from "../api/questionnaire.mjs";
+import support from "../api/support.mjs";
 import { buildSupportPlan } from "../deployment/frontend/src/plan.mjs";
 
 const features = Array.from(
@@ -162,4 +163,25 @@ test("downloaded plans exclude sensitive results by default and raw answers alwa
   assert.ok(sensitive.includes(result.label));
   assert.ok(!sensitive.includes("D01"));
   assert.ok(!sensitive.includes(schema.questions.D01));
+});
+
+test("standalone support endpoint does not require model files or assessment responses", () => {
+  const response = {
+    setHeader() {},
+    end(body) {
+      this.body = JSON.parse(body);
+    },
+  };
+  support({ method: "GET" }, response);
+  assert.equal(response.statusCode, 200);
+  assert.equal(response.body.version, "dvq-dss-v1");
+  assert.equal(response.body.services.length, 5);
+  const wrongMethod = {
+    setHeader() {},
+    end(body) {
+      this.body = JSON.parse(body);
+    },
+  };
+  support({ method: "POST" }, wrongMethod);
+  assert.equal(wrongMethod.statusCode, 405);
 });

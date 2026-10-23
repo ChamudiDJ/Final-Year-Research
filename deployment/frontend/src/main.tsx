@@ -21,6 +21,8 @@ async function api<T>(path: string, options?: RequestInit): Promise<T> {
 
 function App() {
   const [schema, setSchema] = useState<Schema | null>(null);
+  const [support, setSupport] = useState<Schema["dss"] | null>(null);
+  const [supportFailed, setSupportFailed] = useState(false);
   const [error, setError] = useState("");
   const [eligible, setEligible] = useState(false);
   const [answers, setAnswers] = useState<Record<string, number | null>>({});
@@ -30,6 +32,9 @@ function App() {
   const [sessionKey, setSessionKey] = useState(0);
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
+    api<Schema["dss"]>("/api/support")
+      .then(setSupport)
+      .catch(() => setSupportFailed(true));
     api<Schema>("/api/questionnaire")
       .then(setSchema)
       .catch((e) => setError(e.message));
@@ -318,7 +323,11 @@ function App() {
             )}
           </section>
         </div>
-        {schema && <SupportDirectory key={sessionKey} schema={schema} />}
+        <SupportDirectory
+          key={sessionKey}
+          config={support}
+          failed={supportFailed}
+        />
         {schema && (
           <details id="research" className="research">
             <summary>About the research and model</summary>

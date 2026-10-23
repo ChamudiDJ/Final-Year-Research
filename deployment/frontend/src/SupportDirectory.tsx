@@ -39,10 +39,39 @@ function ServiceCard({ service }: { service: Service }) {
   );
 }
 
-export function SupportDirectory({ schema }: { schema: Schema }) {
+export function SupportDirectory({
+  config,
+  failed = false,
+}: {
+  config: Schema["dss"] | null;
+  failed?: boolean;
+}) {
   const [filter, setFilter] = useState("all");
   const [campus, setCampus] = useState("");
-  const campusService = schema.dss.campuses.find((c) => c.id === campus);
+  const campusService = config?.campuses.find((c) => c.id === campus);
+  if (!config)
+    return (
+      <section
+        id="support"
+        className="support-section"
+        aria-labelledby="support-heading"
+      >
+        <h2 id="support-heading">Find support</h2>
+        <UrgentHelp />
+        <p>
+          {failed
+            ? "Detailed service information is temporarily unavailable. Emergency contact numbers remain available above."
+            : "Loading official support options. You can use the emergency contacts above without waiting."}
+        </p>
+        <a
+          href="https://www.childwomenmin.gov.lk/public/contact/en"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Ministry of Women and Child Affairs contact information ↗
+        </a>
+      </section>
+    );
   const filters = [
     ["all", "All support"],
     ["counselling", "University counselling"],
@@ -108,7 +137,7 @@ export function SupportDirectory({ schema }: { schema: Schema }) {
               onChange={(e) => setCampus(e.target.value)}
             >
               <option value="">Choose a university (optional)</option>
-              {schema.dss.campuses.map((c) => (
+              {config.campuses.map((c) => (
                 <option key={c.id} value={c.id}>
                   {c.name}
                 </option>
@@ -136,7 +165,7 @@ export function SupportDirectory({ schema }: { schema: Schema }) {
             </small>
           </article>
         )}
-        {schema.dss.services
+        {config.services
           .filter(
             (s) =>
               s.category !== "urgent" &&
