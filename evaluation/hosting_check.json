@@ -1,0 +1,11 @@
+{
+  "questionnaire_fields": 20,
+  "cache_control": "no-store",
+  "expert_evaluation": "pending",
+  "participant_usability": "pending",
+  "browser_acceptance": "passed",
+  "health_status": 200,
+  "unsupported_method_status": 405,
+  "url": "https://help-seeking-intention-dss.vercel.app",
+  "invalid_request_status": 422
+}
