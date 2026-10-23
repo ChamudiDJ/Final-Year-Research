@@ -1,0 +1,23 @@
+{
+  "partial_subtotal": 19,
+  "url": "https://help-seeking-intention-dss.vercel.app",
+  "services": 5,
+  "complete_total": 20,
+  "campus_directories": 4,
+  "partial_possible_range": [
+    19,
+    23
+  ],
+  "dss_version": "dvq-dss-v1",
+  "model_retrained": false,
+  "model": "Random Forest",
+  "complete_category_scores": [
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "result": "passed",
+  "partial_total": null
+}

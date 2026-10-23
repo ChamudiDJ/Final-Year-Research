@@ -1,0 +1,8 @@
+{
+  "url": "https://help-seeking-intention-dss.vercel.app",
+  "api_status": "passed",
+  "dss_version": "dvq-dss-v1",
+  "browser_acceptance": "passed",
+  "participant_and_expert_evaluation": "pending real responses",
+  "execution": "Colab notebook02 cell14"
+}

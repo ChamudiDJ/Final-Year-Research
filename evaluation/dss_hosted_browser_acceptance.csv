@@ -1,0 +1,10 @@
+case,passed,notes
+complete_profile,1,20 Rarely responses: total 20/80 and all five category sums 4/16
+partial_profile,1,"D01 skipped: total incomplete, subtotal19, possible19-23; Coercion incomplete subtotal3"
+review_answers,1,Review retained answers and allowed a skipped response to replace an answered item
+support_plan,1,"Counselling choice displayed a next step, conversation opening and checklist"
+medical_directory,1,Medical filter showed Mithuru Piyasa with official source and urgent links
+clear_answers,1,Clear returned zero selected answers
+public_api,1,"Public API served dvq-dss-v1, five services, four campus directories and valid scores"
+mobile_390,1,Fresh hosted browser at390x844: content width375; complete dashboard and controls readable
+refresh_privacy,1,Reload after selecting an answer returned zero checked assessment inputs
