@@ -1,0 +1,11 @@
+.git
+data
+outputs
+models
+report_figures
+notebooks
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+**/dist
+.env
