@@ -2,70 +2,75 @@ TAP version 13
 # Subtest: DVQ-R mapping covers exactly 20 unique items and the five retained domains
 ok 1 - DVQ-R mapping covers exactly 20 unique items and the five retained domains
   ---
-  duration_ms: 3.618845
+  duration_ms: 3.959569
   ...
 # Subtest: complete scores sum raw frequencies without reversing or severity thresholds
 ok 2 - complete scores sum raw frequencies without reversing or severity thresholds
   ---
-  duration_ms: 7.070137
+  duration_ms: 9.918385
   ...
 # Subtest: skipped items never become zero or training medians in descriptive scores
 ok 3 - skipped items never become zero or training medians in descriptive scores
   ---
-  duration_ms: 0.789615
+  duration_ms: 1.013056
   ...
 # Subtest: decision rules use observed evidence and support stays available at every score
 ok 4 - decision rules use observed evidence and support stays available at every score
   ---
-  duration_ms: 1.543313
+  duration_ms: 1.70178
   ...
 # Subtest: DSS additions preserve evaluated predictions and explanation completeness
 ok 5 - DSS additions preserve evaluated predictions and explanation completeness
   ---
-  duration_ms: 180.658407
+  duration_ms: 222.456505
   ...
 # Subtest: public questionnaire supplies the versioned service and scoring sources
 ok 6 - public questionnaire supplies the versioned service and scoring sources
   ---
-  duration_ms: 1.140414
+  duration_ms: 1.524504
   ...
 # Subtest: downloaded plans exclude sensitive results by default and raw answers always
 ok 7 - downloaded plans exclude sensitive results by default and raw answers always
   ---
-  duration_ms: 101.688554
+  duration_ms: 119.088158
+  ...
+# Subtest: standalone support endpoint does not require model files or assessment responses
+ok 8 - standalone support endpoint does not require model files or assessment responses
+  ---
+  duration_ms: 0.653204
   ...
 # Subtest: invalid responses are rejected
-ok 8 - invalid responses are rejected
+ok 9 - invalid responses are rejected
   ---
-  duration_ms: 3.592349
+  duration_ms: 3.705399
   ...
 # Subtest: exported model matches sklearn on synthetic parity cases
-ok 9 - exported model matches sklearn on synthetic parity cases
+ok 10 - exported model matches sklearn on synthetic parity cases
   ---
-  duration_ms: 99.058266
+  duration_ms: 102.27635
   ...
 # Subtest: boundary and missing responses produce valid explainable estimates
-ok 10 - boundary and missing responses produce valid explainable estimates
+ok 11 - boundary and missing responses produce valid explainable estimates
   ---
-  duration_ms: 1036.299987
+  duration_ms: 1037.878809
   ...
 # Subtest: API serves schema and health with evaluated model only
-ok 11 - API serves schema and health with evaluated model only
+ok 12 - API serves schema and health with evaluated model only
   ---
-  duration_ms: 1.269865
+  duration_ms: 1.252656
   ...
 # Subtest: API validates eligibility, methods, missing answers and extra fields
-ok 12 - API validates eligibility, methods, missing answers and extra fields
+ok 13 - API validates eligibility, methods, missing answers and extra fields
   ---
-  duration_ms: 75.278724
+  duration_ms: 134.501723
   ...
-1..12
-# tests 12
+1..13
+# tests 13
 # suites 0
-# pass 12
+# pass 13
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 1826.29883
+# duration_ms 1921.356523
 

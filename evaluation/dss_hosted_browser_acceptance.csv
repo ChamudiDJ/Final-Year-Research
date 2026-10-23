@@ -8,3 +8,4 @@ clear_answers,1,Clear returned zero selected answers
 public_api,1,"Public API served dvq-dss-v1, five services, four campus directories and valid scores"
 mobile_390,1,Fresh hosted browser at390x844: content width375; complete dashboard and controls readable
 refresh_privacy,1,Reload after selecting an answer returned zero checked assessment inputs
+independent_support_endpoint,1,Hosted /api/support serves versioned directory without assessment input; live directory renders

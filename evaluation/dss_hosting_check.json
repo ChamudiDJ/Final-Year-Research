@@ -19,5 +19,6 @@
     4
   ],
   "result": "passed",
-  "partial_total": null
+  "partial_total": null,
+  "independent_support_endpoint": "passed"
 }
