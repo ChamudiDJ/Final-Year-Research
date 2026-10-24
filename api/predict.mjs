@@ -13,6 +13,11 @@ export default function handler(req, res) {
   let payload;
   try {
     payload = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+  } catch {
+    send(res, 422, { detail: "Provide valid JSON questionnaire responses." });
+    return;
+  }
+  try {
     if (
       !payload ||
       Array.isArray(payload) ||

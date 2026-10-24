@@ -123,3 +123,11 @@ test("API validates eligibility, methods, missing answers and extra fields", () 
   assert.equal(valid.statusCode, 200);
   assert.equal(valid.headers["Cache-Control"], "no-store");
 });
+
+test("malformed JSON errors do not echo submitted content", () => {
+  const res = response();
+  predict({ method: "POST", body: "SYNTHETIC-PRIVATE-MARKER" }, res);
+  assert.equal(res.statusCode, 422);
+  assert.equal(res.body.detail, "Provide valid JSON questionnaire responses.");
+  assert.ok(!JSON.stringify(res.body).includes("SYNTHETIC"));
+});
