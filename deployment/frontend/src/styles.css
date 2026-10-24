@@ -237,6 +237,7 @@ aside {
   line-height: 1.6;
 }
 .steps li > span {
+  color: #52647b;
   display: grid;
   flex-shrink: 0;
   place-items: center;
@@ -1053,7 +1054,7 @@ summary {
   display: block;
   margin-top: 18px;
   font-size: 12px;
-  color: #667890;
+  color: #526780;
 }
 .service-actions {
   display: flex;

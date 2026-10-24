@@ -216,7 +216,7 @@ function App() {
                   </span>
                   <span>{Math.round((completed / 20) * 100)}%</span>
                 </div>
-                <progress value={completed} max={20} />
+                <progress aria-label="Questionnaire completion" value={completed} max={20} />
                 {step === 0 && (
                   <label className="eligibility">
                     <input
