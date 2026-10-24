@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-24T04:55:56.501187+00:00",
+  "tested_source_commit": "d674a40b464b64c58a40218924f7850f5721b795",
+  "app_url": "https://help-seeking-intention-dss.vercel.app",
+  "deployed_assets": [
+    "/assets/index-CRL-x_B_.js",
+    "/assets/index-Bsc0MsTL.css"
+  ],
+  "request_data": "Synthetic questionnaire fixtures only",
+  "browser_engines_available": [
+    "In-app browser only; see browser matrix"
+  ],
+  "cold_start_confirmed": false
+}

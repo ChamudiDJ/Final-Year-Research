@@ -1,0 +1,352 @@
+[
+  {
+    "view": "assessment_initial",
+    "contrast_checked": 147,
+    "contrast_failures": [],
+    "control_count": 40,
+    "h1": 1,
+    "lang": "en",
+    "manual_background_review_n": 0,
+    "minimum_sampled_ratio": 4.402344832133918,
+    "radio_groups": [
+      {
+        "group": true,
+        "name": "D01"
+      },
+      {
+        "group": true,
+        "name": "D01"
+      },
+      {
+        "group": true,
+        "name": "D01"
+      },
+      {
+        "group": true,
+        "name": "D01"
+      },
+      {
+        "group": true,
+        "name": "D01"
+      },
+      {
+        "group": true,
+        "name": "D01"
+      },
+      {
+        "group": true,
+        "name": "D02"
+      },
+      {
+        "group": true,
+        "name": "D02"
+      },
+      {
+        "group": true,
+        "name": "D02"
+      },
+      {
+        "group": true,
+        "name": "D02"
+      },
+      {
+        "group": true,
+        "name": "D02"
+      },
+      {
+        "group": true,
+        "name": "D02"
+      },
+      {
+        "group": true,
+        "name": "D03"
+      },
+      {
+        "group": true,
+        "name": "D03"
+      },
+      {
+        "group": true,
+        "name": "D03"
+      },
+      {
+        "group": true,
+        "name": "D03"
+      },
+      {
+        "group": true,
+        "name": "D03"
+      },
+      {
+        "group": true,
+        "name": "D03"
+      },
+      {
+        "group": true,
+        "name": "D04"
+      },
+      {
+        "group": true,
+        "name": "D04"
+      },
+      {
+        "group": true,
+        "name": "D04"
+      },
+      {
+        "group": true,
+        "name": "D04"
+      },
+      {
+        "group": true,
+        "name": "D04"
+      },
+      {
+        "group": true,
+        "name": "D04"
+      },
+      {
+        "group": true,
+        "name": "D05"
+      },
+      {
+        "group": true,
+        "name": "D05"
+      },
+      {
+        "group": true,
+        "name": "D05"
+      },
+      {
+        "group": true,
+        "name": "D05"
+      },
+      {
+        "group": true,
+        "name": "D05"
+      },
+      {
+        "group": true,
+        "name": "D05"
+      }
+    ],
+    "title": "Help-Seeking Intention · Research DSS",
+    "unnamed_controls": []
+  },
+  {
+    "view": "all_skipped_error",
+    "contrast_checked": 149,
+    "contrast_failures": [],
+    "control_count": 39,
+    "h1": 1,
+    "lang": "en",
+    "manual_background_review_n": 0,
+    "minimum_sampled_ratio": 4.402344832133918,
+    "radio_groups": [
+      {
+        "group": true,
+        "name": "D16"
+      },
+      {
+        "group": true,
+        "name": "D16"
+      },
+      {
+        "group": true,
+        "name": "D16"
+      },
+      {
+        "group": true,
+        "name": "D16"
+      },
+      {
+        "group": true,
+        "name": "D16"
+      },
+      {
+        "group": true,
+        "name": "D16"
+      },
+      {
+        "group": true,
+        "name": "D17"
+      },
+      {
+        "group": true,
+        "name": "D17"
+      },
+      {
+        "group": true,
+        "name": "D17"
+      },
+      {
+        "group": true,
+        "name": "D17"
+      },
+      {
+        "group": true,
+        "name": "D17"
+      },
+      {
+        "group": true,
+        "name": "D17"
+      },
+      {
+        "group": true,
+        "name": "D18"
+      },
+      {
+        "group": true,
+        "name": "D18"
+      },
+      {
+        "group": true,
+        "name": "D18"
+      },
+      {
+        "group": true,
+        "name": "D18"
+      },
+      {
+        "group": true,
+        "name": "D18"
+      },
+      {
+        "group": true,
+        "name": "D18"
+      },
+      {
+        "group": true,
+        "name": "D19"
+      },
+      {
+        "group": true,
+        "name": "D19"
+      },
+      {
+        "group": true,
+        "name": "D19"
+      },
+      {
+        "group": true,
+        "name": "D19"
+      },
+      {
+        "group": true,
+        "name": "D19"
+      },
+      {
+        "group": true,
+        "name": "D19"
+      },
+      {
+        "group": true,
+        "name": "D20"
+      },
+      {
+        "group": true,
+        "name": "D20"
+      },
+      {
+        "group": true,
+        "name": "D20"
+      },
+      {
+        "group": true,
+        "name": "D20"
+      },
+      {
+        "group": true,
+        "name": "D20"
+      },
+      {
+        "group": true,
+        "name": "D20"
+      }
+    ],
+    "title": "Help-Seeking Intention · Research DSS",
+    "unnamed_controls": []
+  },
+  {
+    "view": "complete_dashboard",
+    "contrast_checked": 138,
+    "contrast_failures": [],
+    "control_count": 17,
+    "h1": 1,
+    "lang": "en",
+    "manual_background_review_n": 0,
+    "minimum_sampled_ratio": 4.402344832133918,
+    "radio_groups": [],
+    "title": "Help-Seeking Intention · Research DSS",
+    "unnamed_controls": []
+  },
+  {
+    "view": "partial_dashboard",
+    "contrast_checked": 141,
+    "contrast_failures": [],
+    "control_count": 16,
+    "h1": 1,
+    "lang": "en",
+    "manual_background_review_n": 0,
+    "minimum_sampled_ratio": 4.402344832133918,
+    "radio_groups": [],
+    "title": "Help-Seeking Intention · Research DSS",
+    "unnamed_controls": []
+  },
+  {
+    "view": "explanation_expanded",
+    "contrast_checked": 126,
+    "contrast_failures": [],
+    "control_count": 11,
+    "h1": 1,
+    "lang": "en",
+    "manual_background_review_n": 0,
+    "minimum_sampled_ratio": 4.402344832133918,
+    "radio_groups": [],
+    "title": "Help-Seeking Intention · Research DSS",
+    "unnamed_controls": []
+  },
+  {
+    "view": "plan_expanded",
+    "contrast_checked": 98,
+    "contrast_failures": [],
+    "control_count": 21,
+    "h1": 1,
+    "lang": "en",
+    "manual_background_review_n": 0,
+    "minimum_sampled_ratio": 4.402344832133918,
+    "radio_groups": [
+      {
+        "group": true,
+        "name": "support-need"
+      },
+      {
+        "group": true,
+        "name": "support-need"
+      },
+      {
+        "group": true,
+        "name": "support-need"
+      },
+      {
+        "group": true,
+        "name": "support-need"
+      }
+    ],
+    "title": "Help-Seeking Intention · Research DSS",
+    "unnamed_controls": []
+  },
+  {
+    "view": "mobile_complete_dashboard",
+    "contrast_checked": 131,
+    "contrast_failures": [],
+    "control_count": 17,
+    "h1": 1,
+    "lang": "en",
+    "manual_background_review_n": 0,
+    "minimum_sampled_ratio": 4.402344832133918,
+    "radio_groups": [],
+    "title": "Help-Seeking Intention · Research DSS",
+    "unnamed_controls": []
+  }
+]

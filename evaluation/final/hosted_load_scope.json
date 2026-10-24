@@ -1,0 +1,9 @@
+{
+  "max_concurrent_clients": 3,
+  "concurrent_request_n": 12,
+  "concurrent_wall_seconds": 1.676,
+  "concurrent_observed_requests_per_second": 7.16,
+  "cold_start_confirmed": false,
+  "maximum_capacity_tested": false,
+  "limitation": "No platform instance lifecycle control. First measured performance request follows functional checks and is not a verified cold start. Small sample and one client location."
+}

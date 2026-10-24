@@ -1,0 +1,5 @@
+id,finding,fix,verification,status,commit
+A11Y-01,Questionnaire progress had no accessible name,Added Questionnaire completion aria-label,No unnamed visible controls in seven inspected states,FIXED,94b0ec0
+A11Y-02,Six initial small-text contrast failures below 4.5:1,Darkened inactive step numbers and service source text,Zero text contrast failures in the sampled final states,FIXED,94b0ec0
+A11Y-03,Light-background keyboard focus outline had insufficient contrast,Darkened focus outline to #b57710,Sampled outline contrast 3.462:1; real keyboard events checked,FIXED,73c196c
+SEC-01,Malformed JSON parser errors reflected a submitted text prefix,Return a fixed validation message; add automated regression,Local regression and hosted malformed-text case pass without echoing SYNTHETIC,FIXED,d674a40

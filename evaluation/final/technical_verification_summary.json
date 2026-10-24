@@ -1,0 +1,16 @@
+{
+  "tested_source_commit": "d674a40b464b64c58a40218924f7850f5721b795",
+  "deployed_assets": [
+    "/assets/index-CRL-x_B_.js",
+    "/assets/index-Bsc0MsTL.css"
+  ],
+  "api_checks": 27,
+  "api_passed": 27,
+  "header_checks": 45,
+  "header_passed": 45,
+  "performance_requests": 33,
+  "performance_failures": 0,
+  "sequential_and_concurrent_targets_met": true,
+  "cold_start_confirmed": false,
+  "completed_utc": "2026-10-24T04:56:22.726505+00:00"
+}

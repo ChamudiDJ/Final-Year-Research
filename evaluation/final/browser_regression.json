@@ -1,0 +1,156 @@
+[
+  {
+    "test_id": "FT-01",
+    "status": "PASS",
+    "actual_result": "Directory and urgent contacts available before eligibility or answers.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-04",
+    "status": "PASS",
+    "actual_result": "No initial answers; eligibility required.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-02",
+    "status": "PASS",
+    "actual_result": "Medical filter shows hospital service; urgent links retained.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-03",
+    "status": "PASS",
+    "actual_result": "All four campuses display official HTTPS links; university choice is stated to be outside model inputs.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-04b",
+    "status": "PASS",
+    "actual_result": "Five answers alone do not bypass eligibility.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-05",
+    "status": "PASS",
+    "actual_result": "Unanswered second page blocks Continue.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-19",
+    "status": "PASS",
+    "actual_result": "Back retains all first-page responses, including explicit D01 skip.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-06",
+    "status": "PASS",
+    "actual_result": "D01 skipped, others Rarely: incomplete total, subtotal 19, arithmetic range 19–23.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-07",
+    "status": "PASS",
+    "actual_result": "Coercion incomplete with subtotal 3; other four categories 4/16.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-08",
+    "status": "PASS",
+    "actual_result": "Model missing-input handling disclosed separately from DVQ-R sums.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-11",
+    "status": "PASS",
+    "actual_result": "Explanation displays top eight contributions, reference disclosure, all contributions and model-association limitations; skipped-input disclosure is present in the result workflow.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-12",
+    "status": "PASS",
+    "actual_result": "Physical/sexual and coercion suggestions disclose observed-response reasons; all services remain available.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-13",
+    "status": "PASS",
+    "actual_result": "Counsellor preference shows chosen next step, opening script and optional checklist.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-14",
+    "status": "PASS",
+    "actual_result": "Live checked properties confirm counsellor preference and preparation step retained after changing sections.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-15",
+    "status": "PASS",
+    "actual_result": "Sensitive results excluded by default; plan-content exclusions verified by automated test.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-09",
+    "status": "PASS",
+    "actual_result": "Review preserves all responses; changing D01 to Rarely produces total 20/80 and all five categories 4/16.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-16",
+    "status": "PASS",
+    "actual_result": "Clear resets all questionnaire answers, eligibility and selected university.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-10",
+    "status": "PASS",
+    "actual_result": "All 20 skips rejected with accessible alert; support stays available.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-17",
+    "status": "PASS",
+    "actual_result": "390x844 emulated viewport: assessment and complete dashboard fit without horizontal overflow; total20/80. Physical device not tested.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-20",
+    "status": "PASS",
+    "actual_result": "Refreshing after a completed synthetic assessment removes responses and eligibility.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  },
+  {
+    "test_id": "FT-18",
+    "status": "PASS",
+    "actual_result": "Deliberately absent MODEL_DIR: assessment unavailable while support and medical filter remain usable.",
+    "source_commit": "d674a40",
+    "environment": "Local failure fixture on port3001; production unchanged"
+  },
+  {
+    "test_id": "FT-21",
+    "status": "PASS",
+    "actual_result": "Leave-page control targets Google; no-referrer attribute inspected; no test emergency calls placed.",
+    "source_commit": "73c196c",
+    "environment": "Published app; in-app browser"
+  }
+]

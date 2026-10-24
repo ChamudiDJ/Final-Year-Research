@@ -1,0 +1,10 @@
+{
+  "local_python": "3.13.9",
+  "local_node": "v24.13.0",
+  "os": "Windows 11",
+  "deployed_node_major": "22.x; package engines and Vercel project setting",
+  "ci_node_major": "22.x; .github/workflows/ci.yml",
+  "client_scope": "One Windows execution client; browser engine not independently identified",
+  "performance_request_count": 33,
+  "maximum_concurrent_clients": 3
+}

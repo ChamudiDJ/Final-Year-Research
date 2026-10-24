@@ -1,19 +1,23 @@
-case,passed,notes
-support_before_assessment,1,Support directory and emergency links available without answers or eligibility
-service_filter,1,Medical filter shows hospital service; emergency access stays visible
-campus_directory,1,Moratuwa selection opens its official counselling contact; no model input
-eligibility_gate,1,No preselected responses; Continue disabled without eligibility
-incomplete_page_gate,1,Next page disabled until every item is answered or explicitly skipped
-partial_dvq,1,D01 skipped and remaining items Rarely: subtotal 19; total incomplete; possible sum 19-23
-partial_category,1,Coercion incomplete: subtotal 3 across 3/4; other categories 4/16
-model_missing_disclosure,1,Skipped response disclosed as model median; not included in DVQ sums
-review_responses,1,Review retains responses; setting D01 to Rarely yields total 20/80 and five sums 4/16
-all_skipped,1,All 20 skips show explanatory error while services remain accessible
-explanation,1,SHAP panel shows contributions and skipped-item median disclosure
-support_rule_reasons,1,Physical/sexual and coercion options display observed-response rationale
-planner,1,"Counsellor option reveals next step, opening script and optional checklist"
-planner_navigation,1,Plan choice and checked step survive switching to explanation and back
-export_privacy_default,1,Sensitive assessment results checkbox is unchecked by default; export content unit-tested
-clear_session,1,"Clear resets answers, eligibility and university choice"
-mobile_390,1,"390x844 viewport: content width 375, no horizontal overflow; scores and controls readable"
-model_failure_support,1,Deliberately unavailable model: assessment unavailable; separate support directory and medical filter remained usable
+case,passed,notes,environment
+support_before_assessment,1,Directory and urgent contacts available before eligibility or answers.,Published app; in-app browser
+eligibility_gate,1,No initial answers; eligibility required.,Published app; in-app browser
+service_filter,1,Medical filter shows hospital service; urgent links retained.,Published app; in-app browser
+campus_directory,1,All four campuses display official HTTPS links; university choice is stated to be outside model inputs.,Published app; in-app browser
+eligibility_after_answers,1,Five answers alone do not bypass eligibility.,Published app; in-app browser
+incomplete_page_gate,1,Unanswered second page blocks Continue.,Published app; in-app browser
+back_navigation,1,"Back retains all first-page responses, including explicit D01 skip.",Published app; in-app browser
+partial_dvq,1,"D01 skipped, others Rarely: incomplete total, subtotal 19, arithmetic range 19â€“23.",Published app; in-app browser
+partial_category,1,Coercion incomplete with subtotal 3; other four categories 4/16.,Published app; in-app browser
+model_missing_disclosure,1,Model missing-input handling disclosed separately from DVQ-R sums.,Published app; in-app browser
+explanation,1,"Explanation displays top eight contributions, reference disclosure, all contributions and model-association limitations; skipped-input disclosure is present in the result workflow.",Published app; in-app browser
+support_rule_reasons,1,Physical/sexual and coercion suggestions disclose observed-response reasons; all services remain available.,Published app; in-app browser
+planner,1,"Counsellor preference shows chosen next step, opening script and optional checklist.",Published app; in-app browser
+planner_navigation,1,Live checked properties confirm counsellor preference and preparation step retained after changing sections.,Published app; in-app browser
+export_privacy_default,1,Sensitive results excluded by default; plan-content exclusions verified by automated test.,Published app; in-app browser
+review_responses,1,Review preserves all responses; changing D01 to Rarely produces total 20/80 and all five categories 4/16.,Published app; in-app browser
+clear_session,1,"Clear resets all questionnaire answers, eligibility and selected university.",Published app; in-app browser
+all_skipped,1,All 20 skips rejected with accessible alert; support stays available.,Published app; in-app browser
+mobile_390,1,390x844 emulated viewport: assessment and complete dashboard fit without horizontal overflow; total20/80. Physical device not tested.,Published app; in-app browser
+refresh_privacy,1,Refreshing after a completed synthetic assessment removes responses and eligibility.,Published app; in-app browser
+model_failure_support,1,Deliberately absent MODEL_DIR: assessment unavailable while support and medical filter remain usable.,Local failure fixture on port3001; production unchanged
+leave_page_link,1,Leave-page control targets Google; no-referrer attribute inspected; no test emergency calls placed.,Published app; in-app browser

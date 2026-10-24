@@ -1,0 +1,15 @@
+{
+  "production_before_submissions": {
+    "commit": "998e7bf7be69e8cba2646c8280bf1cefe2601287",
+    "created_display": "23 Oct 2026, 14:11:24 GMT+5:30",
+    "status": "Ready",
+    "url": "/chamudi-dj/help-seeking-intention-dss/CtpspDLyT1oFDgHV3vDgUzYrbNKm"
+  },
+  "next_production": {
+    "commit": "dabdabe2c3269e54a5628c4eaadcec098f774998",
+    "created_display": "24 Oct 2026, 7:54:30 GMT+5:30",
+    "status": "Ready",
+    "url": "/chamudi-dj/help-seeking-intention-dss/GuvfnY7GPZUgtzeMEV8kuqAKTwSV"
+  },
+  "interpretation": "Deployment timeline indicates commit998e7bf was the available production revision during the recorded evaluation period. This is a retrospective inference; no per-participant build identifier or cache state was captured."
+}

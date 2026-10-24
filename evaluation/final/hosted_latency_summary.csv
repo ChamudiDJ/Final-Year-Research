@@ -1,0 +1,4 @@
+phase,n,failed_or_incorrect_n,mean_ms,p50_ms,p95_ms,minimum_ms,maximum_ms,p95_target_ms,target_met,scope
+first_measured_after_functional_checks,1,0,507.976,507.976,507.976,507.976,507.976,,,"Client HTTP round trip including response read, JSON parsing and correctness checks"
+sequential,20,0,359.614,357.98,377.657,343.059,387.337,3000,True,"Client HTTP round trip including response read, JSON parsing and correctness checks"
+concurrent_3,12,0,409.991,354.337,598.725,328.249,635.215,3000,True,"Client HTTP round trip including response read, JSON parsing and correctness checks"

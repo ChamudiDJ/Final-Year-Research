@@ -1,0 +1,42 @@
+{
+  "recruitment": {
+    "researcher_description": "Eligible users and experts completed evaluation through shared links.",
+    "sampling_description": "Voluntary respondents recruited through shared links; convenience/volunteer recruitment, not demonstrated random sampling.",
+    "user_records": 10,
+    "domain_expert_records": 2,
+    "number_invited": null,
+    "response_rate": null
+  },
+  "forms": {
+    "user": "https://forms.gle/nYVe5wYxn3t8z5Lg9",
+    "expert": "https://forms.gle/SMdtoUw4cbRsY7FGA",
+    "public_form_pages_checked": true,
+    "responses_submitted_during_verification": false
+  },
+  "evaluated_app": {
+    "url": "https://help-seeking-intention-dss.vercel.app/",
+    "same_link_for_everyone": "Confirmed by researcher",
+    "exact_deployment_at_participant_evaluation": null,
+    "note": "Vercel production history indicates revision998e7bf during the observed evaluation period; no per-participant build or browser-cache identifier was captured. This is retrospective inference.",
+    "production_revision_during_period_inferred": "998e7bf7be69e8cba2646c8280bf1cefe2601287",
+    "version_evidence": "evaluation_deployment_timeline.json"
+  },
+  "collection_period": {
+    "start": "2026-10-23",
+    "end": "2026-10-23",
+    "status": "Verified from first and last individual response records in Google Forms",
+    "user_displayed_time_range": "20:47-23:03",
+    "expert_displayed_time_range": "21:14-21:44",
+    "timezone_note": "Submission labels do not state their timezone; date and times are recorded as displayed.",
+    "evidence": "submission_period_observations.json"
+  },
+  "expert_context": {
+    "institution": "Department of Psychology, NIBM",
+    "professional_positions": "Course Director and Consultant/Lecturer roles provided by researcher",
+    "degree_qualifications_verified": false,
+    "signed_letters_held": "Researcher confirms originals are held",
+    "signed_letters_inspected": false,
+    "attribution": "Retain named details in private records; no new names or signatures included in Git-tracked results."
+  },
+  "interpretation": "User questionnaires and domain expert judgements support descriptive evaluation; not clinical validation."
+}

@@ -1,0 +1,46 @@
+path,check,passed,scope
+/,HTTPS,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/,No response caching,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/,MIME sniffing prevented,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/,Referrer suppressed,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/,Framing denied,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/,HSTS present,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/,Scripts restricted to own origin,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/,No wildcard CORS on API responses,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/,No application cookie set,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/health,HTTPS,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/health,No response caching,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/health,MIME sniffing prevented,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/health,Referrer suppressed,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/health,Framing denied,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/health,HSTS present,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/health,Scripts restricted to own origin,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/health,No wildcard CORS on API responses,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/health,No application cookie set,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/questionnaire,HTTPS,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/questionnaire,No response caching,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/questionnaire,MIME sniffing prevented,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/questionnaire,Referrer suppressed,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/questionnaire,Framing denied,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/questionnaire,HSTS present,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/questionnaire,Scripts restricted to own origin,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/questionnaire,No wildcard CORS on API responses,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/questionnaire,No application cookie set,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/support,HTTPS,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/support,No response caching,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/support,MIME sniffing prevented,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/support,Referrer suppressed,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/support,Framing denied,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/support,HSTS present,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/support,Scripts restricted to own origin,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/support,No wildcard CORS on API responses,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/support,No application cookie set,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/predict,HTTPS,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/predict,No response caching,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/predict,MIME sniffing prevented,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/predict,Referrer suppressed,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/predict,Framing denied,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/predict,HSTS present,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/predict,Scripts restricted to own origin,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/predict,No wildcard CORS on API responses,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test
+/api/predict,No application cookie set,True,Observed HTTP response; public HTML wildcard CORS is permitted because it contains no questionnaire results; not a penetration test

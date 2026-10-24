@@ -1,12 +1,22 @@
-case,passed,notes
-no_preselected_answers,1,All 30 visible radio inputs unselected on entry
-eligibility_gate,1,Continue remained disabled after five answers until eligibility was confirmed
-incomplete_page_gate,1,Continue disabled while the next page had unanswered items
-back_navigation,1,All five answers retained after Back
-complete_assessment,1,20 synthetic Never responses returned the trained model result
-class_probabilities,1,"Low 91.7%, neutral 6.6%, high 1.7%; displayed total 100.0%"
-local_explanations,1,"Contributions, reference disclosure and support guidance displayed"
-clear_answers,1,Reset returned to zero selected answers
-refresh_privacy,1,Reload returned to zero selected answers
-mobile_390,1,390x844 viewport: no horizontal overflow; question controls remained readable
-exit_link,1,Leave this page targets https://www.google.com with no-referrer
+case,passed,notes,environment
+support_before_assessment,1,Directory and urgent contacts available before eligibility or answers.,Published app; in-app browser
+eligibility_gate,1,No initial answers; eligibility required.,Published app; in-app browser
+service_filter,1,Medical filter shows hospital service; urgent links retained.,Published app; in-app browser
+campus_directory,1,All four campuses display official HTTPS links; university choice is stated to be outside model inputs.,Published app; in-app browser
+eligibility_after_answers,1,Five answers alone do not bypass eligibility.,Published app; in-app browser
+incomplete_page_gate,1,Unanswered second page blocks Continue.,Published app; in-app browser
+back_navigation,1,"Back retains all first-page responses, including explicit D01 skip.",Published app; in-app browser
+partial_dvq,1,"D01 skipped, others Rarely: incomplete total, subtotal 19, arithmetic range 19â€“23.",Published app; in-app browser
+partial_category,1,Coercion incomplete with subtotal 3; other four categories 4/16.,Published app; in-app browser
+model_missing_disclosure,1,Model missing-input handling disclosed separately from DVQ-R sums.,Published app; in-app browser
+explanation,1,"Explanation displays top eight contributions, reference disclosure, all contributions and model-association limitations; skipped-input disclosure is present in the result workflow.",Published app; in-app browser
+support_rule_reasons,1,Physical/sexual and coercion suggestions disclose observed-response reasons; all services remain available.,Published app; in-app browser
+planner,1,"Counsellor preference shows chosen next step, opening script and optional checklist.",Published app; in-app browser
+planner_navigation,1,Live checked properties confirm counsellor preference and preparation step retained after changing sections.,Published app; in-app browser
+export_privacy_default,1,Sensitive results excluded by default; plan-content exclusions verified by automated test.,Published app; in-app browser
+review_responses,1,Review preserves all responses; changing D01 to Rarely produces total 20/80 and all five categories 4/16.,Published app; in-app browser
+clear_session,1,"Clear resets all questionnaire answers, eligibility and selected university.",Published app; in-app browser
+all_skipped,1,All 20 skips rejected with accessible alert; support stays available.,Published app; in-app browser
+mobile_390,1,390x844 emulated viewport: assessment and complete dashboard fit without horizontal overflow; total20/80. Physical device not tested.,Published app; in-app browser
+refresh_privacy,1,Refreshing after a completed synthetic assessment removes responses and eligibility.,Published app; in-app browser
+leave_page_link,1,Leave-page control targets Google; no-referrer attribute inspected; no test emergency calls placed.,Published app; in-app browser

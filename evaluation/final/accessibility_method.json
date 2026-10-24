@@ -1,0 +1,20 @@
+{
+  "source": "(() => { const rgb=s=>(s.match(/[\\d.]+/g)||[]).map(Number); const over=(a,b)=>a.slice(0,3).map((v,i)=>v*(a[3]??1)+b[i]*(1-(a[3]??1))); const lum=c=>c.map(v=>{v/=255;return v<=.04045?v/12.92:Math.pow((v+.055)/1.055,2.4)}).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0); const rows=[]; for(const e of document.querySelectorAll('body *')) {if(!e.getClientRects().length||e.closest('[hidden],button:disabled')||(e.closest('details:not([open])')&&!e.closest('summary'))||!Array.from(e.childNodes).some(n=>n.nodeType===3&&n.textContent.trim()))continue; const text=Array.from(e.childNodes).filter(n=>n.nodeType===3).map(n=>n.textContent).join(' ').trim();if(!text)continue;let parents=[],p=e;while(p){parents.unshift(p);p=p.parentElement;}let bg=[255,255,255],manual=false;for(const el of parents){const s=getComputedStyle(el);bg=over(rgb(s.backgroundColor),bg); if(s.backgroundImage!=='none'||Number(s.opacity)!==1)manual=true;}const s=getComputedStyle(e),fg=over(rgb(s.color),bg),l=[lum(fg),lum(bg)].sort((a,b)=>b-a),ratio=(l[0]+.05)/(l[1]+.05),target=Number(s.fontSize.replace('px',''))>=24||(Number(s.fontSize.replace('px',''))>=18.666&&Number(s.fontWeight)>=700)?3:4.5;rows.push({text:text.slice(0,110),selector:e.tagName.toLowerCase()+(e.className?'.'+String(e.className).trim().replaceAll(' ','.'):''),ratio:ratio,target,manual});} const controls=Array.from(document.querySelectorAll('input,select,button,progress,meter')).filter(e=>e.getClientRects().length&&!e.closest('[hidden]')&&(!e.closest('details:not([open])')||e.closest('summary'))).map(e=>({tag:e.tagName,type:e.getAttribute('type'),name:e.getAttribute('name'),accessibleName:e.getAttribute('aria-label')||Array.from(e.labels||[]).map(l=>l.innerText).join(' ')||e.innerText||'',group:e.closest('fieldset')?.querySelector('legend')?.innerText||''}));return {minimum_sampled_ratio:Math.min(...rows.filter(r=>!r.manual).map(r=>r.ratio)),lang:document.documentElement.lang,title:document.title,h1:document.querySelectorAll('h1').length,contrast_checked:rows.filter(r=>!r.manual).length,contrast_failures:rows.filter(r=>!r.manual&&r.ratio<r.target),manual_background_review_n:rows.filter(r=>r.manual).length,unnamed_controls:controls.filter(c=>!c.accessibleName),control_count:controls.length,radio_groups:controls.filter(c=>c.type==='radio').map(c=>({name:c.name,group:!!c.group}))}; })()",
+  "method": "Read-only DOM inspection; comparisons use unrounded contrast ratios",
+  "normal_text_minimum_ratio": 4.5,
+  "large_text_minimum_ratio": 3,
+  "covered_views": [
+    "assessment_initial",
+    "all_skipped_error",
+    "complete_dashboard",
+    "partial_dashboard",
+    "explanation_expanded",
+    "plan_expanded",
+    "mobile_complete_dashboard"
+  ],
+  "limitations": [
+    "Not a full axe/WCAG audit",
+    "No native screen-reader usability session",
+    "Direct DOM text only; pseudo-elements, image text, zoom and forced-colour modes not comprehensively tested"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "users": {
+    "response_n": 10,
+    "first_label": "Submitted 23/10/2026, 20:47",
+    "last_label": "Submitted 23/10/2026, 23:03"
+  },
+  "experts": {
+    "response_n": 2,
+    "first_label": "Submitted 23/10/2026, 21:14",
+    "last_label": "Submitted 23/10/2026, 21:44"
+  },
+  "method": "Read-only inspection of first and last individual response records in Google Forms; no response archive downloaded; no forms or responses changed",
+  "displayed_timezone": "Not specified in response labels; dates are recorded as displayed"
+}

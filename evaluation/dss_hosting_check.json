@@ -20,5 +20,9 @@
   ],
   "result": "passed",
   "partial_total": null,
-  "independent_support_endpoint": "passed"
+  "independent_support_endpoint": "passed",
+  "tested_source_commit": "d674a40b464b64c58a40218924f7850f5721b795",
+  "hosted_api_cases_passed": 27,
+  "hosted_header_checks_passed": 45,
+  "browser_scope": "Final frontend assets checked in the in-app browser; isolated model-failure case tested locally."
 }

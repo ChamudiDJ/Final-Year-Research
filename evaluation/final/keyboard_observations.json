@@ -1,0 +1,12 @@
+{
+  "checkbox": {
+    "background": "rgb(241, 247, 250)",
+    "checked": true,
+    "focusVisible": true,
+    "focused": true,
+    "outline": "rgb(181, 119, 16) solid 2.85714px"
+  },
+  "radio_arrow_right_selected_value": "1",
+  "method": "Real keyboard events through browser controls; visible focus and DOM checked states inspected",
+  "native_screen_reader_tested": false
+}

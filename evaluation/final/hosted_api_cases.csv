@@ -1,0 +1,28 @@
+case,expected_status,actual_status,passed,details
+GET /,200,200,True,HTTPS response received
+GET /api/health,200,200,True,HTTPS response received
+GET /api/questionnaire,200,200,True,HTTPS response received
+GET /api/support,200,200,True,HTTPS response received
+complete scoring,200 and correct scores/probabilities/explanation,200,True,Synthetic complete or skipped-response fixture
+partial scoring,200 and correct scores/probabilities/explanation,200,True,Synthetic complete or skipped-response fixture
+eligibility false,422,422,True,Invalid request rejected without echoing marker
+extra personal field,422,422,True,Invalid request rejected without echoing marker
+missing responses,422,422,True,Invalid request rejected without echoing marker
+target leakage field,422,422,True,Invalid request rejected without echoing marker
+all skipped,422,422,True,Invalid request rejected without echoing marker
+array payload,422,422,True,Invalid request rejected without echoing marker
+invalid response -1,422,422,True,Invalid request rejected without echoing marker
+invalid response 5,422,422,True,Invalid request rejected without echoing marker
+invalid response 1.5,422,422,True,Invalid request rejected without echoing marker
+invalid response True,422,422,True,Invalid request rejected without echoing marker
+invalid response '1',422,422,True,Invalid request rejected without echoing marker
+GET /api/predict,405,405,True,Unsupported method rejected
+POST /api/health,405,405,True,Unsupported method rejected
+POST /api/questionnaire,405,405,True,Unsupported method rejected
+POST /api/support,405,405,True,Unsupported method rejected
+malformed JSON,400 or 422,422,True,Malformed JSON rejected
+malformed text privacy,422 and fixed error without submitted text,422,True,Regression for parser-error reflection
+Private source inaccessible /.env,403/404 or public HTML shell only,404,True,No private file content exposed
+Private source inaccessible /.git/config,403/404 or public HTML shell only,404,True,No private file content exposed
+Private source inaccessible /outputs/evaluation_private/sus_scoring.csv,403/404 or public HTML shell only,404,True,No private file content exposed
+Private source inaccessible /evaluation/user_expert_data_audit.json,403/404 or public HTML shell only,404,True,No private file content exposed

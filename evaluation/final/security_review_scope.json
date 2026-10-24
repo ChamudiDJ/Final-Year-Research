@@ -1,0 +1,22 @@
+{
+  "application_source_reviewed": [
+    "api/*.mjs",
+    "lib/*.mjs",
+    "deployment/frontend/src/*.tsx",
+    "deployment/frontend/src/*.mjs"
+  ],
+  "dependency_audits": "Saved npm audit reports; zero known vulnerabilities reported for both lockfiles.",
+  "application_logging_references_found": false,
+  "application_browser_persistence_found": false,
+  "application_source_write_references_found": false,
+  "unsafe_HTML_insertion_found": false,
+  "data_transport": "Browser sends assessment responses to the same-origin prediction API over HTTPS. University and plan preferences stay in page state.",
+  "download": "An explicit optional plan download is the intentional client file output; sensitive scores excluded by default.",
+  "provider_logging": "Application source contains no answer logging. Vercel infrastructure metadata retention was not independently audited.",
+  "excluded": [
+    "Formal penetration test",
+    "Provider-internal storage and logging audit",
+    "Continuous availability monitoring"
+  ],
+  "public_HTML_CORS": "Wildcard CORS on the public HTML shell is not evidence of access to private response data; API responses are checked separately."
+}

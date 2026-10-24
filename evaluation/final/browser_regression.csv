@@ -1,0 +1,23 @@
+test_id,status,actual_result,source_commit,environment
+FT-01,PASS,Directory and urgent contacts available before eligibility or answers.,73c196c,Published app; in-app browser
+FT-04,PASS,No initial answers; eligibility required.,73c196c,Published app; in-app browser
+FT-02,PASS,Medical filter shows hospital service; urgent links retained.,73c196c,Published app; in-app browser
+FT-03,PASS,All four campuses display official HTTPS links; university choice is stated to be outside model inputs.,73c196c,Published app; in-app browser
+FT-04b,PASS,Five answers alone do not bypass eligibility.,73c196c,Published app; in-app browser
+FT-05,PASS,Unanswered second page blocks Continue.,73c196c,Published app; in-app browser
+FT-19,PASS,"Back retains all first-page responses, including explicit D01 skip.",73c196c,Published app; in-app browser
+FT-06,PASS,"D01 skipped, others Rarely: incomplete total, subtotal 19, arithmetic range 19â€“23.",73c196c,Published app; in-app browser
+FT-07,PASS,Coercion incomplete with subtotal 3; other four categories 4/16.,73c196c,Published app; in-app browser
+FT-08,PASS,Model missing-input handling disclosed separately from DVQ-R sums.,73c196c,Published app; in-app browser
+FT-11,PASS,"Explanation displays top eight contributions, reference disclosure, all contributions and model-association limitations; skipped-input disclosure is present in the result workflow.",73c196c,Published app; in-app browser
+FT-12,PASS,Physical/sexual and coercion suggestions disclose observed-response reasons; all services remain available.,73c196c,Published app; in-app browser
+FT-13,PASS,"Counsellor preference shows chosen next step, opening script and optional checklist.",73c196c,Published app; in-app browser
+FT-14,PASS,Live checked properties confirm counsellor preference and preparation step retained after changing sections.,73c196c,Published app; in-app browser
+FT-15,PASS,Sensitive results excluded by default; plan-content exclusions verified by automated test.,73c196c,Published app; in-app browser
+FT-09,PASS,Review preserves all responses; changing D01 to Rarely produces total 20/80 and all five categories 4/16.,73c196c,Published app; in-app browser
+FT-16,PASS,"Clear resets all questionnaire answers, eligibility and selected university.",73c196c,Published app; in-app browser
+FT-10,PASS,All 20 skips rejected with accessible alert; support stays available.,73c196c,Published app; in-app browser
+FT-17,PASS,390x844 emulated viewport: assessment and complete dashboard fit without horizontal overflow; total20/80. Physical device not tested.,73c196c,Published app; in-app browser
+FT-20,PASS,Refreshing after a completed synthetic assessment removes responses and eligibility.,73c196c,Published app; in-app browser
+FT-18,PASS,Deliberately absent MODEL_DIR: assessment unavailable while support and medical filter remain usable.,d674a40,Local failure fixture on port3001; production unchanged
+FT-21,PASS,Leave-page control targets Google; no-referrer attribute inspected; no test emergency calls placed.,73c196c,Published app; in-app browser

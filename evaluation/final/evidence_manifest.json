@@ -1,0 +1,215 @@
+{
+  "final_application_commit": "d674a40b464b64c58a40218924f7850f5721b795",
+  "frontend_assets": [
+    "/assets/index-CRL-x_B_.js",
+    "/assets/index-Bsc0MsTL.css"
+  ],
+  "browser_case_n": 22,
+  "original_browser_case_n": 18,
+  "current_core_flow_repeated_after_final_API_fix": true,
+  "browser_scope": "Original scenarios run against final frontend assets; parser-only backend fix then passed hosted API regression and a repeated complete hosted browser workflow.",
+  "private_data_included": false,
+  "excluded_evidence": [
+    "Native screen-reader sessions",
+    "Chrome/Edge/Firefox executions",
+    "Physical mobile test",
+    "Confirmed cold-start measurement"
+  ],
+  "files": [
+    {
+      "file": "accessibility_checks.csv",
+      "bytes": 6478,
+      "sha256": "9f06aa1671f26477db046a145292710814154b7edc634c94a8ce04308c571fa1"
+    },
+    {
+      "file": "accessibility_dom_audit.json",
+      "bytes": 6455,
+      "sha256": "f4e8858004c3fdfeff8d263a165cb4f99ae812288f053e1793248667e1db56ab"
+    },
+    {
+      "file": "accessibility_method.json",
+      "bytes": 2944,
+      "sha256": "cf2dd582630f377a574f799cb0f783d76e42ac898258d907d6e7f1bee5158825"
+    },
+    {
+      "file": "application_tests.tap",
+      "bytes": 3548,
+      "sha256": "15bd8a8f4121e15de3870db4a432d76bb7eb5dce3364fd6374e6b0f9fa427bb8"
+    },
+    {
+      "file": "assessment_desktop.jpg",
+      "bytes": 63058,
+      "sha256": "ba153b294da1a48ecd2b2b18959604f328a3cc48e9b77973dc883ff634704833"
+    },
+    {
+      "file": "assessment_mobile.jpg",
+      "bytes": 38855,
+      "sha256": "9061bb32c45bcae54c792205ba609261e7fded4b6f3415cfe723c2cea4deb17b"
+    },
+    {
+      "file": "browser_console.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "browser_regression.csv",
+      "bytes": 3096,
+      "sha256": "22d928ea6c176eff87eb73f77b0bd648cd82e4afbc393cd0e108ff98812c8d68"
+    },
+    {
+      "file": "browser_regression.json",
+      "bytes": 5491,
+      "sha256": "46542b39f73f4b2694b40afadd9407ed2e0566751551c7c5df5e46f615faa76a"
+    },
+    {
+      "file": "ci_check.json",
+      "bytes": 274,
+      "sha256": "95c6b4e36b345f55831ffdd62e36b8d355c559f828e09213eab4109e9ccfdba4"
+    },
+    {
+      "file": "compatibility_matrix.csv",
+      "bytes": 1051,
+      "sha256": "d640d27f774d913bb6e7e589ea5fd798b81ae47aff33d238f00e439cce666a59"
+    },
+    {
+      "file": "dashboard_complete_desktop.jpg",
+      "bytes": 80713,
+      "sha256": "923f31d50cba3ddee3477d0a52bc2d7f99529a5448c999133cbadf246f6fe3e1"
+    },
+    {
+      "file": "dashboard_mobile.jpg",
+      "bytes": 38088,
+      "sha256": "05fcc9d1a2487c7555cd35b37626485dd80dac761a54c338399bc8f51b2387ec"
+    },
+    {
+      "file": "dashboard_partial_desktop.jpg",
+      "bytes": 70629,
+      "sha256": "632dcbbeb907c1efa3671416ec5d7c6e3b845d6bb45e4976ecd01b5f9bcfae4a"
+    },
+    {
+      "file": "dependency_audit_frontend.json",
+      "bytes": 381,
+      "sha256": "811ba19c6f4a7abe1e8d1d1080138b26f174f466dff86ccc1fef8c8a1fcba21d"
+    },
+    {
+      "file": "dependency_audit_root.json",
+      "bytes": 378,
+      "sha256": "830817fc86b149e8e6d751bc7024857edbd2f4d9db63e888f4ec9ca770e2f02b"
+    },
+    {
+      "file": "dependency_audit_summary.csv",
+      "bytes": 85,
+      "sha256": "32c37b8a9606d4340783cb7cbe661cb062b544b6ecb287fdad3ff10109fe6455"
+    },
+    {
+      "file": "deployed_response_headers.json",
+      "bytes": 3804,
+      "sha256": "b096e04223eb91734a1f5f978c209e82b63d735980d12565a0e1c6cc3c1e0beb"
+    },
+    {
+      "file": "evaluation_context.json",
+      "bytes": 2233,
+      "sha256": "c0164522764e34550540b75334f3d0e83fb120ddc549487a3e28dc3d73cab5e9"
+    },
+    {
+      "file": "evaluation_deployment_timeline.json",
+      "bytes": 753,
+      "sha256": "a3f8054646dbacc0df92e155c63c1f27ce55184401954db47d1bc5887d6659ad"
+    },
+    {
+      "file": "final_verification_status.csv",
+      "bytes": 2587,
+      "sha256": "a9d4414a5458f235789b52d5ab86f5b71b8910a92ba45ad3c6f707c1df5e922d"
+    },
+    {
+      "file": "hosted_api_cases.csv",
+      "bytes": 2337,
+      "sha256": "6cc64151e8d06919c1b55aef3f1a0d0ff77f418f41a21e7a367fae9dba1070b1"
+    },
+    {
+      "file": "hosted_latency.png",
+      "bytes": 93833,
+      "sha256": "4ddf4ef5bb8bfff2cc8f0484ed812f433152e3df908b0210b1347b0279446867"
+    },
+    {
+      "file": "hosted_latency_requests.csv",
+      "bytes": 1169,
+      "sha256": "a8c422bf7fdbb2403fc7fec9f242c5c10860ee5a7329c2e1c463bb2a8c45dbab"
+    },
+    {
+      "file": "hosted_latency_summary.csv",
+      "bytes": 585,
+      "sha256": "b9898a45a22f454c989c9a8977dce490a0009f2e79efa782059fb45cbefb7d9c"
+    },
+    {
+      "file": "hosted_load_scope.json",
+      "bytes": 419,
+      "sha256": "932e1bf1bf2dbf231fa34468decdd1314c30be897a422b78608530736eb018ba"
+    },
+    {
+      "file": "keyboard_observations.json",
+      "bytes": 374,
+      "sha256": "6b395a20a5d33871e3d1451202031369ec790cfbfee6a954b481df9dc4c1c3b7"
+    },
+    {
+      "file": "model_failure_support.jpg",
+      "bytes": 60806,
+      "sha256": "0b180e5714808a1fcdeb53265145886b6b918937a14c05c8280dee211ffcb8cf"
+    },
+    {
+      "file": "plan_download_check.json",
+      "bytes": 163,
+      "sha256": "6d35f566f7c6038d2f5deed857b1bb30da3a8dc730b87492c3507a3b775fa0ed"
+    },
+    {
+      "file": "production_build.txt",
+      "bytes": 701,
+      "sha256": "c4a803b677395d26c38cdcc9b5e3a9d054ad6363e8d63323c769af75e4613b14"
+    },
+    {
+      "file": "resolved_defects.csv",
+      "bytes": 805,
+      "sha256": "9fd1c02465e8c12ffcb60094a82c78c593a5725e524c08c4301422de50c13917"
+    },
+    {
+      "file": "security_header_checks.csv",
+      "bytes": 7721,
+      "sha256": "758bddfdba9b23ea6afd5def823873ec9c7a77bf56f83e0e5b9ea31e6aa0b7f1"
+    },
+    {
+      "file": "security_review_scope.json",
+      "bytes": 1197,
+      "sha256": "cdcc973cc348c5ff8e2b4af49806c5ddeeb7628a0ac31aa6b6cd4baea91792e8"
+    },
+    {
+      "file": "security_source_references.csv",
+      "bytes": 2293,
+      "sha256": "6f588f547cfde44ea4f94df65ab52c303cc885c22558af8f50e9c046440af3a1"
+    },
+    {
+      "file": "submission_period_observations.json",
+      "bytes": 533,
+      "sha256": "dfc184e0b256eb2851c5c4f068dad27a275a5577e6f1b14c3ec46ac9f8556430"
+    },
+    {
+      "file": "support_desktop.jpg",
+      "bytes": 77563,
+      "sha256": "80f45e1bfe53fe7debbb00ca2b8dc59f66afbc12c201b3b5d893af6849e6b343"
+    },
+    {
+      "file": "technical_verification_summary.json",
+      "bytes": 463,
+      "sha256": "caf9a92e8ac76a4778f4d182b2db46ef1e59609378f7051e24579efca5d1ef98"
+    },
+    {
+      "file": "verification_environment.json",
+      "bytes": 384,
+      "sha256": "041af5a0cc7298cb3b9f5f03bb6c929bb276211c72ab0281175d0af7067c775a"
+    },
+    {
+      "file": "verification_provenance.json",
+      "bytes": 470,
+      "sha256": "7686fab788c7ea370afbc39ecc3681d1966b95facec98ded4a4a649a3a21700e"
+    }
+  ]
+}

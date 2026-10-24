@@ -1,0 +1,8 @@
+environment,status,evidence,limitation
+In-app browser desktop,PASS within executed cases,browser_regression.json,Browser engine and version not independently established
+In-app browser 390x844 viewport,PASS within executed cases,browser_regression.json; dashboard_mobile.jpg,"Viewport emulation, not a physical mobile device"
+Google Chrome,NOT EXECUTED,Browser inventory exposed only in-app browser and MCP Apps,No Chrome control connection available
+Microsoft Edge,NOT EXECUTED,Browser inventory exposed only in-app browser and MCP Apps,No Edge control connection available
+Mozilla Firefox,NOT EXECUTED,Browser inventory exposed only in-app browser and MCP Apps,No Firefox control connection available
+Physical mobile device,NOT EXECUTED,No physical-device control surface available,Requires a real phone/tablet and recorded manual observations
+Native screen reader,NOT EXECUTED,"Accessibility tree, semantics and keyboard checks performed separately",No native screen-reader control surface available; no usability or WCAG conformance claim

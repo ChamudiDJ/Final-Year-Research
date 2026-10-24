@@ -1,0 +1,47 @@
+view,check,status,actual,scope
+assessment_initial,Document language,PASS,en,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+assessment_initial,Document title,PASS,Help-Seeking Intention Â· Research DSS,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+assessment_initial,One primary heading,PASS,1,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+assessment_initial,Visible control names,PASS,0 unnamed,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+assessment_initial,Sampled visible text contrast,PASS,147 text elements; 0 flagged,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+assessment_initial,Radio groups have legends,PASS,30 radio controls inspected,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+all_skipped_error,Document language,PASS,en,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+all_skipped_error,Document title,PASS,Help-Seeking Intention Â· Research DSS,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+all_skipped_error,One primary heading,PASS,1,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+all_skipped_error,Visible control names,PASS,0 unnamed,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+all_skipped_error,Sampled visible text contrast,PASS,149 text elements; 0 flagged,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+all_skipped_error,Radio groups have legends,PASS,30 radio controls inspected,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+complete_dashboard,Document language,PASS,en,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+complete_dashboard,Document title,PASS,Help-Seeking Intention Â· Research DSS,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+complete_dashboard,One primary heading,PASS,1,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+complete_dashboard,Visible control names,PASS,0 unnamed,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+complete_dashboard,Sampled visible text contrast,PASS,138 text elements; 0 flagged,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+complete_dashboard,Radio groups have legends,PASS,0 radio controls inspected,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+partial_dashboard,Document language,PASS,en,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+partial_dashboard,Document title,PASS,Help-Seeking Intention Â· Research DSS,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+partial_dashboard,One primary heading,PASS,1,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+partial_dashboard,Visible control names,PASS,0 unnamed,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+partial_dashboard,Sampled visible text contrast,PASS,141 text elements; 0 flagged,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+partial_dashboard,Radio groups have legends,PASS,0 radio controls inspected,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+explanation_expanded,Document language,PASS,en,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+explanation_expanded,Document title,PASS,Help-Seeking Intention Â· Research DSS,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+explanation_expanded,One primary heading,PASS,1,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+explanation_expanded,Visible control names,PASS,0 unnamed,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+explanation_expanded,Sampled visible text contrast,PASS,126 text elements; 0 flagged,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+explanation_expanded,Radio groups have legends,PASS,0 radio controls inspected,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+plan_expanded,Document language,PASS,en,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+plan_expanded,Document title,PASS,Help-Seeking Intention Â· Research DSS,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+plan_expanded,One primary heading,PASS,1,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+plan_expanded,Visible control names,PASS,0 unnamed,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+plan_expanded,Sampled visible text contrast,PASS,98 text elements; 0 flagged,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+plan_expanded,Radio groups have legends,PASS,4 radio controls inspected,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+mobile_complete_dashboard,Document language,PASS,en,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+mobile_complete_dashboard,Document title,PASS,Help-Seeking Intention Â· Research DSS,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+mobile_complete_dashboard,One primary heading,PASS,1,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+mobile_complete_dashboard,Visible control names,PASS,0 unnamed,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+mobile_complete_dashboard,Sampled visible text contrast,PASS,131 text elements; 0 flagged,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+mobile_complete_dashboard,Radio groups have legends,PASS,0 radio controls inspected,Rendered DOM checks; not full WCAG conformance or screen-reader usability
+keyboard,Space toggles eligibility,PASS,Real Space key selected the checkbox,In-app browser
+keyboard,Visible keyboard focus,PASS,Visible outline; measured colour ratio 3.462:1 against sampled label background,One observed checkbox focus state; CSS also supplies focus-visible rules for other controls
+keyboard,Arrow navigation in radio group,PASS,ArrowRight moved from Never to Rarely,In-app browser
+native screen reader,Usability with native screen reader,NOT EXECUTED,No native screen-reader control surface available,Accessibility tree inspection is not a substitute

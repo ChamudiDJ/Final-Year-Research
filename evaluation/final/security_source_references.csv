@@ -1,0 +1,16 @@
+check,file,line,review
+external_transmission,lib/dss.mjs,3,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,lib/dss.mjs,53,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,lib/dss.mjs,65,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,lib/dss.mjs,78,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,lib/dss.mjs,91,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,lib/dss.mjs,103,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,lib/dss.mjs,113,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,lib/dss.mjs,119,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,lib/dss.mjs,125,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,lib/dss.mjs,131,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,lib/dss.mjs,138,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,deployment/frontend/src/main.tsx,10,Same-origin API fetch; static endpoint paths; answers are sent only in the prediction request body.
+external_transmission,deployment/frontend/src/main.tsx,97,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,deployment/frontend/src/SupportDirectory.tsx,67,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
+external_transmission,deployment/frontend/src/plan.mjs,21,Reviewed literal support/evidence URL or explicit leave-page link; no questionnaire data appended to URLs.
