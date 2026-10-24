@@ -49,7 +49,7 @@ a:focus-visible,
 summary:focus-visible,
 input:focus-visible,
 select:focus-visible {
-  outline: 3px solid #dc9b28;
+  outline: 3px solid #b57710;
   outline-offset: 4px;
 }
 .top {
@@ -441,7 +441,7 @@ progress::-moz-progress-bar {
   cursor: pointer;
 }
 .choice:has(input:focus-visible) {
-  outline: 3px solid #dc9b28;
+  outline: 3px solid #b57710;
   outline-offset: 3px;
 }
 .choice-value {
