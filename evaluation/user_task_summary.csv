@@ -1,0 +1,6 @@
+task,description,reported_outcome,n,eligible_n,percent,measurement
+T1,T1 Score reading,Completed independently,10,10,100.000000,Participant self-report; not independently timed or observed
+T2,T2 Skipped-score interpretation,Completed independently,10,10,100.000000,Participant self-report; not independently timed or observed
+T3,T3 Intention interpretation,Completed independently,10,10,100.000000,Participant self-report; not independently timed or observed
+T4,T4 Finding support,Completed independently,10,10,100.000000,Participant self-report; not independently timed or observed
+T5,T5 Choosing a next step,Completed independently,10,10,100.000000,Participant self-report; not independently timed or observed

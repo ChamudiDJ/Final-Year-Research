@@ -1,0 +1,7 @@
+item,question,expected_answer,eligible_n,scorable_n,missing_n,unresolved_n,correct_n,correct_percent_of_scorable
+C1,"With Rarely (1) selected for all 20 items, what total DVQ-R score does the dashboard show?",20 / 80,10,10,0,0,10,100.000000
+C2,"In the same example, what is the Coercion category score?",4/16,10,10,0,0,10,100.000000
+C3,"After skipping D01 in that example, how should the total and Coercion scores be interpreted?",Both scores are incomplete; the app shows observed subtotals rather than complete scores.,10,10,0,0,10,100.000000
+C4,What does the model’s help-seeking intention estimate represent?,The student’s stated willingness to seek professional help.,10,10,0,0,10,100.000000
+C5,Which hospital-based support option is listed under Medical care?,Mithuru Piyasa / Natpu Nilayam,10,10,0,0,10,100.000000
+C6,"When a user chooses a next step in the planner, what does the app do?",Shows a possible next step and conversation prompt; the user decides whether to contact anyone.,10,10,0,0,10,100.000000

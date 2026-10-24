@@ -1,0 +1,7 @@
+criterion_id,criterion,reviewer_group,submitted_n,rated_n,unable_to_assess_n,missing_n,mean_rating,sd_rating,median_rating,min_rating,max_rating,rating_1_n,rating_2_n,rating_3_n,rating_4_n,rating_5_n
+EX3-1,"The wording is respectful, non-judgemental, and psychologically appropriate for the target students.",domain,2,2,0,0,5.000000,0.000000,5.000000,5,5,0,0,0,0,2
+EX3-2,DVQ-R total/category scores and skipped responses are presented clearly without unsupported clinical cut-offs.,domain,2,2,0,0,5.000000,0.000000,5.000000,5,5,0,0,0,0,2
+EX3-3,"The H3 estimate is clearly distinguished from danger, diagnosis, and actual service use.",domain,2,2,0,0,5.000000,0.000000,5.000000,5,5,0,0,0,0,2
+EX3-4,The model explanation communicates its purpose and limitations clearly.,domain,2,2,0,0,5.000000,0.000000,5.000000,5,5,0,0,0,0,2
+EX3-5,Support services and next-step guidance are appropriate and preserve user choice.,domain,2,2,0,0,5.000000,0.000000,5.000000,5,5,0,0,0,0,2
+EX3-6,Privacy information and safeguards are appropriate for this sensitive research context.,domain,2,2,0,0,5.000000,0.000000,5.000000,5,5,0,0,0,0,2

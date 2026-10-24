@@ -1,0 +1,35 @@
+{
+  "user_source": "Pathways DSS User Evaluation.csv",
+  "expert_source": "Pathways DSS Expert Review.csv",
+  "user_source_sha256": "bdc90b6a05990dad05160364db5c7065f075fd4ebdf5bdcbac846b9274c595f6",
+  "expert_source_sha256": "e1a77821ea57ad4aeda438d27e363f1511d2344759e9b52a4d57858cc2796864",
+  "user_submitted_n": 10,
+  "user_eligible_consenting_n": 10,
+  "user_excluded_no_consent_n": 0,
+  "sus_complete_n": 10,
+  "sus_excluded_incomplete_n": 0,
+  "expert_n": 2,
+  "expert_group": "domain",
+  "technical_reviewer_n": 0,
+  "additional_identical_user_rows": 1,
+  "identical_rows_confirmed_different_participants": true,
+  "duplicate_identity_check": "Researcher confirmed the identical rows represent different participants; all records retained. No stable respondent identifiers are present for independent verification.",
+  "c2_correction": {
+    "source_value": "Apr-16",
+    "analysis_value": "4/16",
+    "affected_n": 10,
+    "confirmed_by_researcher": true,
+    "source_file_modified": false
+  },
+  "user_substantive_positive_feedback_n": 5,
+  "user_nonplaceholder_improvement_feedback_n": 3,
+  "expert_substantive_revision_comment_n": 0,
+  "limitations": [
+    "Small supplied sample: 10 user records and 2 domain expert records; no population-level or clinical validation claim.",
+    "Task completion is self-reported. Completion times, observed assistance and observed critical-error records were not supplied.",
+    "The CSV exports do not establish sampling method, response rate, collection dates or the exact evaluated deployment.",
+    "All comprehension answers and expert ratings are uniform in this supplied sample; report this ceiling effect.",
+    "SUS is a 0-100 score, not a percentage. Expert ratings are descriptive reviewer judgements.",
+    "Source records, reviewer identities and row-level derived scores are excluded from Git-tracked aggregates."
+  ]
+}
